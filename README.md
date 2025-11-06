@@ -1,10 +1,36 @@
-# Satellite Data Manager
+# Satellite Data Manager 🚀
 
-Projet S1 – Python avancé + Docker + Git
+Mini-projet Python pour manipuler et nettoyer des données satellites, avec tests unitaires et Docker prêt pour production.
 
-## Instructions
-1. Activer venv
-2. Installer dépendances
-3. Lancer : python src/main.py
-4. Build Docker : docker build -t satellite-data-manager .
-5. Run Docker : docker run -it satellite-data-manager
+---
+
+## Objectif
+
+- Lire des fichiers CSV satellites
+- Nettoyer et normaliser les données (ex : noms colonnes en minuscules)
+- Organiser le projet comme un vrai repo professionnel
+- Containeriser le projet avec Docker pour tests et déploiement rapide
+- Appliquer bonnes pratiques de code : tests, typage, logging
+
+---
+
+## Structure du projet
+# Satellite Data Manager 🚀
+
+Mini-projet Python pour manipuler et nettoyer des données satellites, avec tests unitaires et Docker prêt pour production.
+
+---
+
+## Objectif
+
+- Lire des fichiers CSV satellites
+- Nettoyer et normaliser les données (ex : noms colonnes en minuscules)
+- Organiser le projet comme un vrai repo professionnel
+- Containeriser le projet avec Docker pour tests et déploiement rapide
+- Appliquer bonnes pratiques de code : tests, typage, logging
+
+---
+
+## Structure du projet
+
+
