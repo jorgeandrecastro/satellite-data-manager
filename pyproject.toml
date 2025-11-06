@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "satellite-data-manager"
+version = "0.1.0"
+description = "Gestion et nettoyage de données satellites avec FastAPI, pandas et Docker."
+authors = [
+    { name = "Jorge Andre Castro" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0.0",
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.0"
+]
+
+[tool.pytest.ini_options]
+# Chemin par défaut des tests
+testpaths = ["src/tests"]
+pythonpath = ["src"]
+addopts = "-v --tb=short"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+skip-string-normalization = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+extend-select = ["I"] # pour trier les imports
+exclude = [
+    ".venv",
+    "venv",
+    "__pycache__",
+    ".pytest_cache",
+    "build",
+    "dist"
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]  # Ignore les imports non utilisés dans __init__
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+
+[tool.coverage.report]
+omit = [
+    "src/tests/*",
+    "venv/*"
+]
+show_missing = true

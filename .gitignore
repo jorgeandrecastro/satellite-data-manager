@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+
+# VS Code
+.vscode/
+
+# Data
+data/
+*.csv
+
+# Docker
+*.log
+*.db
